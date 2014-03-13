@@ -23,7 +23,7 @@
 #
 #       /etc/rc.d/init.d/hbase-indexer
 #
-#       Startup/shutdown script fro the hbase-indexer service
+#       Startup/shutdown script for the hbase-indexer service
 #
 # <tags -- see below for tag definitions.  *Every line* from the top
 #  of the file to the end of the tags section must begin with a #
@@ -50,7 +50,8 @@ PATH=/sbin:/usr/sbin:/bin:/usr/bin
 DESC="Indexer service for hbase"
 NAME=hbase-indexer
 DAEMON=${HBASE_INDEXER_HOME}/bin/$NAME
-DAEMON_ARGS="--config /etc/hbase-indexer/conf daemon"
+export HBASE_INDEXER_CONF_DIR=/etc/hbase-indexer/conf
+DAEMON_ARGS="daemon"
 PIDFILE=/var/run/$NAME.pid
 SCRIPTNAME=/etc/init.d/$NAME
 lockfile=/var/lock/subsys/${NAME}

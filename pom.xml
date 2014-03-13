@@ -16,8 +16,7 @@
  * limitations under the License.
  */
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
   <properties>
     <version.solr>4.4.0</version.solr>
@@ -32,8 +31,8 @@
     <version.zookeeper>3.4.5-cdh4.4.0</version.zookeeper>
     <version.jackson>1.9.2</version.jackson>
     <version.httpclient>4.2.5</version.httpclient>
-    <version.kite>0.10.0</version.kite>
-    <version.search>1.1.0</version.search>
+    <version.kite>0.12.0</version.kite>
+    <version.search>1.2.0</version.search>
 
     <!-- Tells maven plugins what file encoding to use -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -43,7 +42,7 @@
   <groupId>com.ngdata</groupId>
   <artifactId>hbase-indexer</artifactId>
   <packaging>pom</packaging>
-  <version>1.4-SNAPSHOT</version>
+  <version>1.5-SNAPSHOT</version>
   <name>HBase Indexer</name>
 
   <url>http://www.ngdata.com/</url>
@@ -424,7 +423,7 @@
           <dependency>
             <groupId>com.ngdata</groupId>
             <artifactId>hbase-sep-impl</artifactId>
-            <version>1.4-hbase0.94-SNAPSHOT</version>
+            <version>1.5-hbase0.94-SNAPSHOT</version>
           </dependency>
 
           <!-- We have to explicitly manage Hadoop dependencies here, since they are optional in HBase -->
@@ -500,7 +499,7 @@
           <dependency>
             <groupId>com.ngdata</groupId>
             <artifactId>hbase-sep-impl</artifactId>
-            <version>1.4-hbase0.95-SNAPSHOT</version>
+            <version>1.5-hbase0.95-SNAPSHOT</version>
           </dependency>
 
           <!-- We have to explicitly manage Hadoop dependencies here, since they are optional in HBase -->
